@@ -13,6 +13,7 @@
 		83F498232909A9A1003770BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F498212909A9A1003770BF /* Main.storyboard */; };
 		83F498252909A9A2003770BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F498242909A9A2003770BF /* Assets.xcassets */; };
 		83F498282909A9A2003770BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F498262909A9A2003770BF /* LaunchScreen.storyboard */; };
+		8BA8FB91290BE462000606CC /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA8FB90290BE462000606CC /* Food.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		83F498242909A9A2003770BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83F498272909A9A2003770BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83F498292909A9A2003770BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BA8FB90290BE462000606CC /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +61,21 @@
 				83F4981B2909A9A1003770BF /* AppDelegate.swift */,
 				83F4981D2909A9A1003770BF /* SceneDelegate.swift */,
 				83F4981F2909A9A1003770BF /* ViewController.swift */,
-				83F498212909A9A1003770BF /* Main.storyboard */,
+				8BA8FB8F290BE272000606CC /* Models */,
 				83F498242909A9A2003770BF /* Assets.xcassets */,
 				83F498262909A9A2003770BF /* LaunchScreen.storyboard */,
 				83F498292909A9A2003770BF /* Info.plist */,
+				83F498212909A9A1003770BF /* Main.storyboard */,
 			);
 			path = HungryPet;
+			sourceTree = "<group>";
+		};
+		8BA8FB8F290BE272000606CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BA8FB90290BE462000606CC /* Food.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83F498202909A9A1003770BF /* ViewController.swift in Sources */,
+				8BA8FB91290BE462000606CC /* Food.swift in Sources */,
 				83F4981C2909A9A1003770BF /* AppDelegate.swift in Sources */,
 				83F4981E2909A9A1003770BF /* SceneDelegate.swift in Sources */,
 			);
