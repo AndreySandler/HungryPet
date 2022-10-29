@@ -27,6 +27,6 @@ class DataStore {
         "Мука"
     ]
     
-    private init() {}
+    private init() {} 
 }
 
