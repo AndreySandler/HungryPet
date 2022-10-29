@@ -63,22 +63,14 @@
 				83F4981B2909A9A1003770BF /* AppDelegate.swift */,
 				83F4981D2909A9A1003770BF /* SceneDelegate.swift */,
 				83F4981F2909A9A1003770BF /* ViewController.swift */,
-				8BA8FB8F290BE272000606CC /* Models */,
+				8BA8FB90290BE462000606CC /* Food.swift */,
+				8BA8FB92290C3AF1000606CC /* Ingredients.swift */,
 				83F498242909A9A2003770BF /* Assets.xcassets */,
 				83F498262909A9A2003770BF /* LaunchScreen.storyboard */,
 				83F498292909A9A2003770BF /* Info.plist */,
 				83F498212909A9A1003770BF /* Main.storyboard */,
 			);
 			path = HungryPet;
-			sourceTree = "<group>";
-		};
-		8BA8FB8F290BE272000606CC /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				8BA8FB90290BE462000606CC /* Food.swift */,
-				8BA8FB92290C3AF1000606CC /* Ingredients.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
