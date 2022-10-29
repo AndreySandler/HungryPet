@@ -147,7 +147,7 @@ enum Dish {
             switch self {
             case .sandwich:
                 var recipe: [String] = []
-                for ingredient in basket.foodList {
+                for ingredient in DataStore.shared.foodList {
                     if ingredient == "Яйцо",
                        ingredient == "Хлеб",
                        ingredient == "Сыр",
@@ -160,7 +160,7 @@ enum Dish {
                 
             case .salad:
                 var recipe: [String] = []
-                for ingredient in basket.foodList {
+                for ingredient in DataStore.shared.foodList {
                     if ingredient == "Помидор",
                        ingredient == "Огурец",
                        ingredient == "Лук"
@@ -172,7 +172,7 @@ enum Dish {
                 
             case .vegetableRice:
                 var recipe: [String] = []
-                for ingredient in basket.foodList {
+                for ingredient in DataStore.shared.foodList {
                     if ingredient == "Помидор",
                        ingredient == "Рис",
                        ingredient == "Яйцо",
@@ -185,7 +185,7 @@ enum Dish {
                 
             case .friedPotatoes:
                 var recipe: [String] = []
-                for ingredient in basket.foodList {
+                for ingredient in DataStore.shared.foodList {
                     if ingredient == "Картофель"
                     {
                         recipe.append(ingredient)
@@ -195,7 +195,7 @@ enum Dish {
                 
             case .maсAndCheese:
                 var recipe: [String] = []
-                for ingredient in basket.foodList {
+                for ingredient in DataStore.shared.foodList {
                     if ingredient == "Макароны",
                        ingredient == "Сыр",
                        ingredient == "Молоко"
@@ -207,7 +207,7 @@ enum Dish {
                 
             case .bakedChicken:
                 var recipe: [String] = []
-                for ingredient in basket.foodList {
+                for ingredient in DataStore.shared.foodList {
                     if ingredient == "Курица"
                     {
                         recipe.append(ingredient)
@@ -217,7 +217,7 @@ enum Dish {
                 
             case .cutlets:
                 var recipe: [String] = []
-                for ingredient in basket.foodList {
+                for ingredient in DataStore.shared.foodList {
                     if ingredient == "Курица",
                        ingredient == "Лук",
                        ingredient == "Яйцо",
@@ -230,7 +230,7 @@ enum Dish {
                 
             case .casserole:
                 var recipe: [String] = []
-                for ingredient in basket.foodList {
+                for ingredient in DataStore.shared.foodList {
                     if ingredient == "Курица",
                        ingredient == "Картофель",
                        ingredient == "Помидор",
@@ -244,7 +244,7 @@ enum Dish {
                 
             case .wokWithChicken:
                 var recipe: [String] = []
-                for ingredient in basket.foodList {
+                for ingredient in DataStore.shared.foodList {
                     if ingredient == "Курица",
                        ingredient == "Макароны",
                        ingredient == "Помидор",
@@ -258,7 +258,7 @@ enum Dish {
                 
             case .pizza:
                 var recipe: [String] = []
-                for ingredient in basket.foodList {
+                for ingredient in DataStore.shared.foodList {
                     if ingredient == "Мука",
                        ingredient == "Яйцо",
                        ingredient == "Сыр",
@@ -272,7 +272,7 @@ enum Dish {
                 
             case .friedFish:
                 var recipe: [String] = []
-                for ingredient in basket.foodList {
+                for ingredient in DataStore.shared.foodList {
                     if ingredient == "Рыба",
                        ingredient == "Помидор",
                        ingredient == "Лук"
@@ -284,7 +284,7 @@ enum Dish {
                 
             case .avokadoToast:
                 var recipe: [String] = []
-                for ingredient in basket.foodList {
+                for ingredient in DataStore.shared.foodList {
                     if ingredient == "Авокадо",
                        ingredient == "Хлеб",
                        ingredient == "Яйцо"
@@ -296,7 +296,7 @@ enum Dish {
                 
             case .poke:
                 var recipe: [String] = []
-                for ingredient in basket.foodList {
+                for ingredient in DataStore.shared.foodList {
                     if ingredient == "Рыба",
                        ingredient == "Авокадо",
                        ingredient == "Помидор",
@@ -311,7 +311,7 @@ enum Dish {
                 
             case .creamyPasta:
                 var recipe: [String] = []
-                for ingredient in basket.foodList {
+                for ingredient in DataStore.shared.foodList {
                     if ingredient == "Макароны",
                        ingredient == "Молоко",
                        ingredient == "Сыр",
@@ -324,7 +324,7 @@ enum Dish {
                 
             case .chickenFricassee:
                 var recipe: [String] = []
-                for ingredient in basket.foodList {
+                for ingredient in DataStore.shared.foodList {
                     if ingredient == "Курица",
                        ingredient == "Молоко",
                        ingredient == "Мука",
