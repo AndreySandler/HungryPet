@@ -35,8 +35,10 @@ enum Dish {
     case creamyPasta
     case chickenFricassee
     
-    var recipe: String {
-        switch self {
+}
+
+func getRecipe(for dish: Dish) -> String {
+        switch dish {
         case .sandwich:
             let sandwich = Food(
                 title: "Сочный сэндвич за 2 минуты",
@@ -143,8 +145,8 @@ enum Dish {
             return "Такого ты еще не пробовал. Спойлер: это просто сливочная курица. \(chikenFricassee)"
         }
         
-        var ingredients: [String] {
-            switch self {
+    func getIngredients(for dish: Dish) -> [String] {
+            switch dish {
             case .sandwich:
                 var recipe: [String] = []
                 for ingredient in DataStore.shared.foodList {
@@ -337,7 +339,7 @@ enum Dish {
             }
         }
     }
-}
+
 
 
 
