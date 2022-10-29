@@ -30,7 +30,7 @@ class ProductsViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "products", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "productSelection", for: indexPath)
 
 
 
