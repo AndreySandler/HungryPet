@@ -43,7 +43,7 @@
                     <navigationItem key="navigationItem" title="Мои продукты" id="dpq-Mg-3Mr">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="rrf-gk-ALA">
                             <connections>
-                                <segue destination="mah-Di-dPP" kind="show" identifier="products" id="clP-5S-Etl"/>
+                                <segue destination="Hq6-KV-IAj" kind="presentation" modalPresentationStyle="fullScreen" id="O0X-Vi-ZQr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -66,7 +66,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vkt-u2-fS0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-88" y="-3"/>
+            <point key="canvasLocation" x="109" y="-3"/>
         </scene>
         <!--Products View Controller-->
         <scene sceneID="YnH-0v-8Eb">
@@ -100,11 +100,35 @@
                             <outlet property="delegate" destination="mah-Di-dPP" id="cCd-jG-Q7U"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" customizationIdentifier="" id="iHQ-z2-Frv"/>
+                    <navigationItem key="navigationItem" customizationIdentifier="" id="iHQ-z2-Frv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="EDY-cp-G8s">
+                            <connections>
+                                <action selector="saveButtonDidTapped" destination="mah-Di-dPP" id="HHz-Rx-GBy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0su-V7-VtO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1684" y="-3"/>
+            <point key="canvasLocation" x="2528" y="-3"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WZg-XG-V5y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hq6-KV-IAj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fQy-qx-oIO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mah-Di-dPP" kind="relationship" relationship="rootViewController" id="6i6-2a-GRu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oig-Dr-qyZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1683.75" y="-3.1690140845070425"/>
         </scene>
     </scenes>
     <resources>

@@ -24,9 +24,10 @@ class ProductsViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
+    @IBAction func saveButtonDidTapped() {
         delegate?.getProducts(selectedProducts)
         print(selectedProducts)
+        dismiss(animated: true)
     }
     
     // MARK: - UITableViewDataSource
