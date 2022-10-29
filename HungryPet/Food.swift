@@ -10,6 +10,10 @@ struct Food {
     let cuisineType: CuisineType
 }
 
+struct Product {
+    let title: String
+}
+
 enum CuisineType {
     case vegetarian
     case regular
@@ -161,7 +165,6 @@ func getRecipe(for dish: Dish) -> String {
             return recipe
             
         case .salad:
-            var recipe: [String] = []
             for ingredient in DataStore.shared.foodList {
                 if ingredient == "Помидор",
                    ingredient == "Огурец",
@@ -173,7 +176,6 @@ func getRecipe(for dish: Dish) -> String {
             return recipe
             
         case .vegetableRice:
-            var recipe: [String] = []
             for ingredient in DataStore.shared.foodList {
                 if ingredient == "Помидор",
                    ingredient == "Рис",
@@ -186,7 +188,6 @@ func getRecipe(for dish: Dish) -> String {
             return recipe
             
         case .friedPotatoes:
-            var recipe: [String] = []
             for ingredient in DataStore.shared.foodList {
                 if ingredient == "Картофель"
                 {
@@ -196,7 +197,6 @@ func getRecipe(for dish: Dish) -> String {
             return recipe
             
         case .maсAndCheese:
-            var recipe: [String] = []
             for ingredient in DataStore.shared.foodList {
                 if ingredient == "Макароны",
                    ingredient == "Сыр",
@@ -208,7 +208,6 @@ func getRecipe(for dish: Dish) -> String {
             return recipe
             
         case .bakedChicken:
-            var recipe: [String] = []
             for ingredient in DataStore.shared.foodList {
                 if ingredient == "Курица"
                 {
@@ -218,7 +217,6 @@ func getRecipe(for dish: Dish) -> String {
             return recipe
             
         case .cutlets:
-            var recipe: [String] = []
             for ingredient in DataStore.shared.foodList {
                 if ingredient == "Курица",
                    ingredient == "Лук",
@@ -231,7 +229,6 @@ func getRecipe(for dish: Dish) -> String {
             return recipe
             
         case .casserole:
-            var recipe: [String] = []
             for ingredient in DataStore.shared.foodList {
                 if ingredient == "Курица",
                    ingredient == "Картофель",
@@ -245,7 +242,6 @@ func getRecipe(for dish: Dish) -> String {
             return recipe
             
         case .wokWithChicken:
-            var recipe: [String] = []
             for ingredient in DataStore.shared.foodList {
                 if ingredient == "Курица",
                    ingredient == "Макароны",
@@ -259,7 +255,6 @@ func getRecipe(for dish: Dish) -> String {
             return recipe
             
         case .pizza:
-            var recipe: [String] = []
             for ingredient in DataStore.shared.foodList {
                 if ingredient == "Мука",
                    ingredient == "Яйцо",
@@ -273,7 +268,6 @@ func getRecipe(for dish: Dish) -> String {
             return recipe
             
         case .friedFish:
-            var recipe: [String] = []
             for ingredient in DataStore.shared.foodList {
                 if ingredient == "Рыба",
                    ingredient == "Помидор",
@@ -285,7 +279,6 @@ func getRecipe(for dish: Dish) -> String {
             return recipe
             
         case .avokadoToast:
-            var recipe: [String] = []
             for ingredient in DataStore.shared.foodList {
                 if ingredient == "Авокадо",
                    ingredient == "Хлеб",
@@ -297,7 +290,6 @@ func getRecipe(for dish: Dish) -> String {
             return recipe
             
         case .poke:
-            var recipe: [String] = []
             for ingredient in DataStore.shared.foodList {
                 if ingredient == "Рыба",
                    ingredient == "Авокадо",
@@ -312,7 +304,6 @@ func getRecipe(for dish: Dish) -> String {
             return recipe
             
         case .creamyPasta:
-            var recipe: [String] = []
             for ingredient in DataStore.shared.foodList {
                 if ingredient == "Макароны",
                    ingredient == "Молоко",
@@ -325,7 +316,6 @@ func getRecipe(for dish: Dish) -> String {
             return recipe
             
         case .chickenFricassee:
-            var recipe: [String] = []
             for ingredient in DataStore.shared.foodList {
                 if ingredient == "Курица",
                    ingredient == "Молоко",

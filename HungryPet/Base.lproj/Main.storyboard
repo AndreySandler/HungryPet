@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dIJ-VU-LbO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hq6-KV-IAj">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -8,67 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Мои продукты-->
-        <scene sceneID="B2S-aD-e6A">
-            <objects>
-                <tableViewController id="VyP-Xc-rgd" customClass="ProductSelectionViewController" customModule="HungryPet" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="3xh-B3-zql">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="products" textLabel="7PH-7d-zFH" style="IBUITableViewCellStyleDefault" id="Lfy-Dq-3in">
-                                <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lfy-Dq-3in" id="Zz3-iQ-q6h">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7PH-7d-zFH">
-                                            <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="VyP-Xc-rgd" id="fO4-oX-Nye"/>
-                            <outlet property="delegate" destination="VyP-Xc-rgd" id="Lsk-I8-3vs"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Мои продукты" id="dpq-Mg-3Mr">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="rrf-gk-ALA">
-                            <connections>
-                                <segue destination="Hq6-KV-IAj" kind="presentation" modalPresentationStyle="fullScreen" id="O0X-Vi-ZQr"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="V0c-Dh-rxT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="887" y="-3"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="fgg-nO-5Xu">
-            <objects>
-                <navigationController id="dIJ-VU-LbO" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hh0-ed-EKg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="VyP-Xc-rgd" kind="relationship" relationship="rootViewController" id="GlK-n7-56b"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vkt-u2-fS0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="109" y="-3"/>
-        </scene>
-        <!--Products View Controller-->
+        <!--Мои Продукты-->
         <scene sceneID="YnH-0v-8Eb">
             <objects>
                 <tableViewController id="mah-Di-dPP" customClass="ProductsViewController" customModule="HungryPet" customModuleProvider="target" sceneMemberID="viewController">
@@ -84,7 +24,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0gc-1G-C1o">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0gc-1G-C1o">
                                             <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
@@ -100,10 +40,10 @@
                             <outlet property="delegate" destination="mah-Di-dPP" id="cCd-jG-Q7U"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" customizationIdentifier="" id="iHQ-z2-Frv">
+                    <navigationItem key="navigationItem" title="Мои Продукты" customizationIdentifier="" id="iHQ-z2-Frv">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="EDY-cp-G8s">
                             <connections>
-                                <action selector="saveButtonDidTapped" destination="mah-Di-dPP" id="HHz-Rx-GBy"/>
+                                <segue destination="yw3-V3-aPk" kind="show" id="tG4-NN-heA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -112,9 +52,39 @@
             </objects>
             <point key="canvasLocation" x="2528" y="-3"/>
         </scene>
+        <!--Recipes View Controller-->
+        <scene sceneID="VXH-ON-xCX">
+            <objects>
+                <tableViewController id="yw3-V3-aPk" customClass="RecipesViewController" customModule="HungryPet" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Ydw-U3-91d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipes" id="dVN-cM-apH">
+                                <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dVN-cM-apH" id="vua-Ie-aUF">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yw3-V3-aPk" id="iW9-Lo-j9C"/>
+                            <outlet property="delegate" destination="yw3-V3-aPk" id="UxD-qm-3xB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="svl-ZA-7aQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JP6-Gy-DrQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3257" y="-3"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="WZg-XG-V5y">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oig-Dr-qyZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hq6-KV-IAj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fQy-qx-oIO">
@@ -126,13 +96,11 @@
                         <segue destination="mah-Di-dPP" kind="relationship" relationship="rootViewController" id="6i6-2a-GRu"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Oig-Dr-qyZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1683.75" y="-3.1690140845070425"/>
         </scene>
     </scenes>
     <resources>
-        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
