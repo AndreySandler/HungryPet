@@ -7,33 +7,35 @@
 
 import UIKit
 
+protocol ProductsViewControllerDelegate {
+    func getProducts(_ products: [String])
+}
+
 class ProductSelectionViewController: UITableViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    
+    // MARK: - Public Properties
+    var myProducts: [String] = []
+    
+    // MARK: - Override Methods
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let productsVC = segue.destination as? ProductsViewController else { return}
+        
+        productsVC.delegate = self
     }
-
+    
     // MARK: - UITableViewDataSource
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        0
+        myProducts.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "products", for: indexPath)
+        let product = myProducts[indexPath.row]
+        var content = cell.defaultContentConfiguration()
 
-
-
+        content.text = product
+        cell.contentConfiguration = content
+        
         return cell
     }
     
@@ -82,4 +84,10 @@ class ProductSelectionViewController: UITableViewController {
     }
     */
 
+}
+
+extension ProductSelectionViewController: ProductsViewControllerDelegate {
+    func getProducts(_ products: [String]) {
+        myProducts = products
+    }
 }

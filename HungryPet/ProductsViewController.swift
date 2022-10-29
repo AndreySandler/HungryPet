@@ -8,7 +8,12 @@
 import UIKit
 
 class ProductsViewController: UITableViewController {
+    
+    // MARK: - Public Properties
+    var delegate: ProductsViewControllerDelegate?
+    var selectedProducts: [String] = []
 
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,20 +24,24 @@ class ProductsViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    override func viewDidDisappear(_ animated: Bool) {
+        delegate?.getProducts(selectedProducts)
+        print(selectedProducts)
+    }
+    
     // MARK: - UITableViewDataSource
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        10
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        DataStore.shared.foodList.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "productSelection", for: indexPath)
+        let ingredient = DataStore.shared.foodList[indexPath.row]
+        var content = cell.defaultContentConfiguration()
 
-
+        content.text = ingredient
+        cell.contentConfiguration = content
 
         return cell
     }
@@ -42,9 +51,11 @@ class ProductsViewController: UITableViewController {
         
         if cell?.accessoryType == .checkmark {
             cell?.accessoryType = .none
+            selectedProducts.removeLast()
             tableView.deselectRow(at: indexPath, animated: true)
         } else {
             cell?.accessoryType = .checkmark
+            selectedProducts.append(indexPath.description)
             tableView.deselectRow(at: indexPath, animated: true)
         }
     }
@@ -84,14 +95,6 @@ class ProductsViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    // MARK: - UINavigationController
+    
 }

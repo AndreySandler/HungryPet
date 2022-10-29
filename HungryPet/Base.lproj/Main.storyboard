@@ -17,12 +17,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="products" id="Lfy-Dq-3in">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="products" textLabel="7PH-7d-zFH" style="IBUITableViewCellStyleDefault" id="Lfy-Dq-3in">
                                 <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lfy-Dq-3in" id="Zz3-iQ-q6h">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7PH-7d-zFH">
+                                            <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -34,7 +43,7 @@
                     <navigationItem key="navigationItem" title="Мои продукты" id="dpq-Mg-3Mr">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="rrf-gk-ALA">
                             <connections>
-                                <segue destination="mah-Di-dPP" kind="show" id="clP-5S-Etl"/>
+                                <segue destination="mah-Di-dPP" kind="show" identifier="products" id="clP-5S-Etl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -91,7 +100,7 @@
                             <outlet property="delegate" destination="mah-Di-dPP" id="cCd-jG-Q7U"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="iHQ-z2-Frv"/>
+                    <navigationItem key="navigationItem" customizationIdentifier="" id="iHQ-z2-Frv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0su-V7-VtO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

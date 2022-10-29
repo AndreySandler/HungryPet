@@ -15,7 +15,7 @@
 		83F498252909A9A2003770BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F498242909A9A2003770BF /* Assets.xcassets */; };
 		83F498282909A9A2003770BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F498262909A9A2003770BF /* LaunchScreen.storyboard */; };
 		8BA8FB91290BE462000606CC /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA8FB90290BE462000606CC /* Food.swift */; };
-		8BA8FB93290C3AF1000606CC /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA8FB92290C3AF1000606CC /* Ingredients.swift */; };
+		8BA8FB93290C3AF1000606CC /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA8FB92290C3AF1000606CC /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		83F498272909A9A2003770BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83F498292909A9A2003770BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BA8FB90290BE462000606CC /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
-		8BA8FB92290C3AF1000606CC /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
+		8BA8FB92290C3AF1000606CC /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +66,8 @@
 				83A19002290B2570003C64BC /* ProductsViewController.swift */,
 				83F4981B2909A9A1003770BF /* AppDelegate.swift */,
 				83F4981D2909A9A1003770BF /* SceneDelegate.swift */,
-				83F4981F2909A9A1003770BF /* ViewController.swift */,
 				8BA8FB90290BE462000606CC /* Food.swift */,
-				8BA8FB92290C3AF1000606CC /* Ingredients.swift */,
-				83F498212909A9A1003770BF /* Main.storyboard */,
+				8BA8FB92290C3AF1000606CC /* DataStore.swift */,
 				83F498242909A9A2003770BF /* Assets.xcassets */,
 				83F498262909A9A2003770BF /* LaunchScreen.storyboard */,
 				83F498292909A9A2003770BF /* Info.plist */,
@@ -149,12 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83F498202909A9A1003770BF /* ViewController.swift in Sources */,
 				8BA8FB91290BE462000606CC /* Food.swift in Sources */,
 				83F4981C2909A9A1003770BF /* AppDelegate.swift in Sources */,
 				83A19005290B3B21003C64BC /* ProductSelectionViewController.swift in Sources */,
 				83A19003290B2570003C64BC /* ProductsViewController.swift in Sources */,
-				8BA8FB93290C3AF1000606CC /* Ingredients.swift in Sources */,
+				8BA8FB93290C3AF1000606CC /* DataStore.swift in Sources */,
 				83F4981E2909A9A1003770BF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

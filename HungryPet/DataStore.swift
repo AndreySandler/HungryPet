@@ -5,7 +5,9 @@
 //  Created by Ксн Тлскн on 28.10.2022.
 //
 
-struct Ingredient {
+class DataStore {
+    static let shared = DataStore()
+    
     var foodList = [
         "Яйцо",
         "Молоко",
@@ -24,7 +26,7 @@ struct Ingredient {
         "Рис",
         "Мука"
     ]
+    
+    private init() {}
 }
-
-var basket = Ingredient()
 
