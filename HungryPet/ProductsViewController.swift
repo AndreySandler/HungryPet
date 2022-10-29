@@ -23,7 +23,7 @@ class ProductsViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
     override func viewDidDisappear(_ animated: Bool) {
         delegate?.getProducts(selectedProducts)
         print(selectedProducts)
@@ -55,7 +55,7 @@ class ProductsViewController: UITableViewController {
             tableView.deselectRow(at: indexPath, animated: true)
         } else {
             cell?.accessoryType = .checkmark
-            selectedProducts.append(indexPath.description)
+            selectedProducts.append(indexPath.item.description)
             tableView.deselectRow(at: indexPath, animated: true)
         }
     }
