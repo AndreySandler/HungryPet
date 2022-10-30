@@ -12,6 +12,7 @@ class DetailRecipeViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var typeLabel: UILabel!
+    @IBOutlet var recipeLabel: UILabel!
     
     // MARK: - Public Properties
     var recipeTitle: String!
