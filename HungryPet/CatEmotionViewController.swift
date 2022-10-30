@@ -15,7 +15,6 @@ class CatEmotionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         catEmotionImageView.image = UIImage(named: "sleeping")
-
     }
     
     @IBAction func feedButtonDidTapped() {
@@ -27,5 +26,4 @@ class CatEmotionViewController: UIViewController {
             catEmotionImageView.image = UIImage(named: "neutral")
         }
     }
-    
 }
