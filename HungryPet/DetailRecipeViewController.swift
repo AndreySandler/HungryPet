@@ -34,6 +34,7 @@ class DetailRecipeViewController: UIViewController {
         
         let backItem = UIBarButtonItem()
         backItem.title = "Назад"
+        backItem.tintColor = .white
         navigationItem.backBarButtonItem = backItem
     }
 }

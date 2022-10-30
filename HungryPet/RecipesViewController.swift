@@ -76,5 +76,10 @@ class RecipesViewController: UITableViewController {
         detailsVC?.recipeTitle = avaibleDish[indexPath.row]
         detailsVC?.recipeTypeTitle = recipeTypes[indexPath.row]
         detailsVC?.recipeTutorialText = recipesTutorial[indexPath.row]
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = navigationItem.title
+        backItem.tintColor = .white
+        navigationItem.backBarButtonItem = backItem
     }
 }
