@@ -42,8 +42,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Мои Продукты" customizationIdentifier="" id="iHQ-z2-Frv">
-                        <barButtonItem key="backBarButtonItem" title="Назад" id="Q4u-kf-N0Y"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="EDY-cp-G8s">
+                        <barButtonItem key="backBarButtonItem" title="Продукты" id="Q4u-kf-N0Y"/>
+                        <barButtonItem key="rightBarButtonItem" title="Готово" id="EDY-cp-G8s">
                             <connections>
                                 <segue destination="yw3-V3-aPk" kind="show" id="tG4-NN-heA"/>
                             </connections>
