@@ -13,6 +13,7 @@ class RecipesViewController: UITableViewController {
     let food = Food.getRecipe()
     
     var products: [Product] = []
+    var recipeTypes: [String] = []
     
     var avaibleDish: [String] {
         getRecipes()
@@ -22,10 +23,6 @@ class RecipesViewController: UITableViewController {
     }
     
     // MARK: - Override Methods
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print(avaibleDish)
-    }
     
     // MARK: - UITableViewDataSoure
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -63,8 +60,18 @@ class RecipesViewController: UITableViewController {
         for dish in food {
             if dish.products.sorted() == currentIngredients.sorted() {
                 recipes.append(dish.title)
+                recipeTypes.append(dish.cuisineType.rawValue)
             }
         }
         return recipes
+    }
+    
+    // MARK: - UINavigationController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let detailsVC = segue.destination as? DetailRecipeViewController
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        
+        detailsVC?.recipeTitle = avaibleDish[indexPath.row]
+        detailsVC?.recipeTypeTitle = recipeTypes[indexPath.row]
     }
 }

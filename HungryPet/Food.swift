@@ -196,10 +196,10 @@ struct Product {
     let title: String
 }
 
-enum CuisineType {
-    case vegetarian
-    case regular
-    case gourmet
+enum CuisineType: String {
+    case vegetarian = "Вегетерианское"
+    case regular = "Обычное"
+    case gourmet = "Для гурманов"
 }
 
 enum Dish {
