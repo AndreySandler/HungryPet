@@ -29,7 +29,7 @@ class DetailRecipeViewController: UIViewController {
         catEmotionVC?.dishType = recipeTypeTitle
         
         let backItem = UIBarButtonItem()
-        backItem.title = recipeTitle
+        backItem.title = "Назад"
         navigationItem.backBarButtonItem = backItem
     }
 }
