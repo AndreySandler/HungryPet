@@ -112,17 +112,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="H3r-fE-iJE">
-                                <rect key="frame" x="16" y="133.5" width="288" height="43"/>
+                                <rect key="frame" x="16" y="133.5" width="288" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рецепт:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUt-Dy-nTI">
-                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="21.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст рецепта" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLs-KB-TRA">
-                                        <rect key="frame" x="0.0" y="26.5" width="94" height="16.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -140,6 +134,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tYU-Ap-BPQ">
+                                <rect key="frame" x="16" y="162" width="288" height="386"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dhv-mW-flB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -147,13 +149,18 @@
                             <constraint firstItem="CTx-gi-emx" firstAttribute="top" secondItem="epZ-eI-Cpc" secondAttribute="bottom" constant="10" id="0rf-bZ-YTt"/>
                             <constraint firstItem="Dhv-mW-flB" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="CTx-gi-emx" secondAttribute="trailing" constant="151" id="8yK-kK-1aW"/>
                             <constraint firstItem="H3r-fE-iJE" firstAttribute="top" secondItem="gcm-t1-Av9" secondAttribute="bottom" constant="10" id="9UB-XR-4Jz"/>
+                            <constraint firstItem="Dhv-mW-flB" firstAttribute="bottom" secondItem="tYU-Ap-BPQ" secondAttribute="bottom" constant="20" id="Phh-fW-f3j"/>
                             <constraint firstItem="Dhv-mW-flB" firstAttribute="trailing" secondItem="H3r-fE-iJE" secondAttribute="trailing" constant="16" id="Tvb-V9-K8I"/>
+                            <constraint firstItem="tYU-Ap-BPQ" firstAttribute="top" secondItem="H3r-fE-iJE" secondAttribute="bottom" constant="8" id="UgT-t2-ud5"/>
                             <constraint firstItem="CTx-gi-emx" firstAttribute="leading" secondItem="gcm-t1-Av9" secondAttribute="trailing" constant="10" id="bDL-Iv-s7g"/>
                             <constraint firstItem="H3r-fE-iJE" firstAttribute="leading" secondItem="Dhv-mW-flB" secondAttribute="leading" constant="16" id="c6y-x9-x5f"/>
+                            <constraint firstItem="Dhv-mW-flB" firstAttribute="trailing" secondItem="tYU-Ap-BPQ" secondAttribute="trailing" constant="16" id="d8k-XK-OR2"/>
                             <constraint firstItem="gcm-t1-Av9" firstAttribute="leading" secondItem="Dhv-mW-flB" secondAttribute="leading" constant="16" id="dmv-f1-THH"/>
                             <constraint firstItem="gcm-t1-Av9" firstAttribute="top" secondItem="epZ-eI-Cpc" secondAttribute="bottom" constant="10" id="dn2-6o-1Ew"/>
                             <constraint firstItem="Dhv-mW-flB" firstAttribute="trailing" secondItem="epZ-eI-Cpc" secondAttribute="trailing" constant="16" id="hAh-q8-fVx"/>
+                            <constraint firstItem="tYU-Ap-BPQ" firstAttribute="top" secondItem="gcm-t1-Av9" secondAttribute="bottom" constant="38.5" id="mI5-JO-Xaz"/>
                             <constraint firstItem="epZ-eI-Cpc" firstAttribute="top" secondItem="Dhv-mW-flB" secondAttribute="top" constant="17" id="pTW-jc-9fk"/>
+                            <constraint firstItem="tYU-Ap-BPQ" firstAttribute="leading" secondItem="Dhv-mW-flB" secondAttribute="leading" constant="16" id="tgC-i0-hlB"/>
                             <constraint firstItem="epZ-eI-Cpc" firstAttribute="leading" secondItem="Dhv-mW-flB" secondAttribute="leading" constant="16" id="uyF-1A-MoF"/>
                         </constraints>
                     </view>
@@ -166,7 +173,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="recipeLabel" destination="hLs-KB-TRA" id="Ue1-hl-vPc"/>
+                        <outlet property="recipeTextView" destination="tYU-Ap-BPQ" id="nND-Hn-J3P"/>
                         <outlet property="titleLabel" destination="epZ-eI-Cpc" id="GlX-P1-tfT"/>
                         <outlet property="typeLabel" destination="CTx-gi-emx" id="Vvu-ZJ-gXt"/>
                     </connections>

@@ -8,16 +8,21 @@
 import UIKit
 
 class CatEmotionViewController: UIViewController {
+    
+    // MARK: - IBOutlets
     @IBOutlet var catEmotionImageView: UIImageView!
     
+    // MARK: - Public Properties
     var dishType: String!
     
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer()
         catEmotionImageView.image = UIImage(named: "sleeping")
     }
     
+    // MARK: - IBActions
     @IBAction func feedButtonDidTapped() {
         if dishType == "Вегетарианское" {
             catEmotionImageView.image = UIImage(named: "sick")

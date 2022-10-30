@@ -49,6 +49,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83B2EB12290F178F00CCA798 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				83A19002290B2570003C64BC /* ProductsViewController.swift */,
+				8364ED28290D88DE00D5C9AC /* RecipesViewController.swift */,
+				8364ED2A290E97FA00D5C9AC /* DetailRecipeViewController.swift */,
+				5577548E290ED27900004B39 /* CatEmotionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		83B2EB13290F179B00CCA798 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				83F4981B2909A9A1003770BF /* AppDelegate.swift */,
+				83F4981D2909A9A1003770BF /* SceneDelegate.swift */,
+				83F498292909A9A2003770BF /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		83B2EB14290F17A500CCA798 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BA8FB90290BE462000606CC /* Food.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83B2EB15290F17AC00CCA798 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				8BA8FB92290C3AF1000606CC /* DataStore.swift */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		83B2EB16290F17B200CCA798 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				55775492290EF6FE00004B39 /* Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		83B2EB17290F17BC00CCA798 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				83F498262909A9A2003770BF /* LaunchScreen.storyboard */,
+				83F498212909A9A1003770BF /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		83F4980F2909A9A1003770BF = {
 			isa = PBXGroup;
 			children = (
@@ -68,19 +122,13 @@
 		83F4981A2909A9A1003770BF /* HungryPet */ = {
 			isa = PBXGroup;
 			children = (
-				83A19002290B2570003C64BC /* ProductsViewController.swift */,
-				8364ED28290D88DE00D5C9AC /* RecipesViewController.swift */,
-				8364ED2A290E97FA00D5C9AC /* DetailRecipeViewController.swift */,
-				5577548E290ED27900004B39 /* CatEmotionViewController.swift */,
-				83F4981B2909A9A1003770BF /* AppDelegate.swift */,
-				83F4981D2909A9A1003770BF /* SceneDelegate.swift */,
-				8BA8FB90290BE462000606CC /* Food.swift */,
-				8BA8FB92290C3AF1000606CC /* DataStore.swift */,
-				55775492290EF6FE00004B39 /* Extension.swift */,
+				83B2EB12290F178F00CCA798 /* ViewControllers */,
+				83B2EB14290F17A500CCA798 /* Models */,
+				83B2EB13290F179B00CCA798 /* Config */,
+				83B2EB17290F17BC00CCA798 /* Storyboard */,
+				83B2EB15290F17AC00CCA798 /* DataStore */,
+				83B2EB16290F17B200CCA798 /* Extensions */,
 				83F498242909A9A2003770BF /* Assets.xcassets */,
-				83F498262909A9A2003770BF /* LaunchScreen.storyboard */,
-				83F498292909A9A2003770BF /* Info.plist */,
-				83F498212909A9A1003770BF /* Main.storyboard */,
 			);
 			path = HungryPet;
 			sourceTree = "<group>";
@@ -310,10 +358,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = J572FQ3494;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HungryPet/Info.plist;
+				INFOPLIST_FILE = HungryPet/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -324,7 +372,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.3.0;
+				MARKETING_VERSION = 0.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AndreySandler.HungryPet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -342,10 +390,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = J572FQ3494;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HungryPet/Info.plist;
+				INFOPLIST_FILE = HungryPet/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -356,7 +404,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.3.0;
+				MARKETING_VERSION = 0.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AndreySandler.HungryPet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
