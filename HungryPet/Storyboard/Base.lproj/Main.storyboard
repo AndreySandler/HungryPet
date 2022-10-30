@@ -168,7 +168,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Котятя" id="o8Y-uD-SZA">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="8mt-hE-U9d" kind="show" id="ONl-Jy-Y1g"/>
+                                <segue destination="LsB-lo-ktE" kind="show" id="ONl-Jy-Y1g"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -197,7 +197,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uij-ny-Zex">
-                                <rect key="frame" x="73" y="433.5" width="174" height="34.5"/>
+                                <rect key="frame" x="73" y="409.5" width="174" height="34.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="174" id="kgh-U2-HQB"/>
                                 </constraints>
@@ -215,12 +215,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7jg-OK-xYK" firstAttribute="leading" secondItem="z6m-8T-kSg" secondAttribute="leading" id="Glw-pM-eUY"/>
-                            <constraint firstItem="z6m-8T-kSg" firstAttribute="bottom" secondItem="uij-ny-Zex" secondAttribute="bottom" constant="100" id="XEz-ZZ-bnm"/>
+                            <constraint firstItem="z6m-8T-kSg" firstAttribute="bottom" secondItem="uij-ny-Zex" secondAttribute="bottom" constant="75" id="XEz-ZZ-bnm"/>
                             <constraint firstItem="7jg-OK-xYK" firstAttribute="trailing" secondItem="z6m-8T-kSg" secondAttribute="trailing" id="m7Q-1n-9LU"/>
                             <constraint firstItem="uij-ny-Zex" firstAttribute="centerX" secondItem="yyb-ze-IsD" secondAttribute="centerX" id="muB-os-jiW"/>
                             <constraint firstItem="7jg-OK-xYK" firstAttribute="top" secondItem="z6m-8T-kSg" secondAttribute="top" id="wEt-zu-sdz"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" id="zZ8-Bj-4kp"/>
                     <navigationItem key="navigationItem" id="5wG-pt-gQX"/>
                     <connections>
                         <outlet property="catEmotionImageView" destination="7jg-OK-xYK" id="c4a-4C-qK2"/>
@@ -228,7 +229,58 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2qA-jK-ZKF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4704.375" y="-3.1690140845070425"/>
+            <point key="canvasLocation" x="5561" y="-3"/>
+        </scene>
+        <!--Developers View Controller-->
+        <scene sceneID="zfv-8Y-Li4">
+            <objects>
+                <viewController id="AF7-yZ-2uR" customClass="DevelopersViewController" customModule="HungryPet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7cX-cx-stz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="aif-tA-p7T">
+                                <rect key="frame" x="65" y="212.5" width="190.5" height="143.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Разработчики:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymd-P3-JWz">
+                                        <rect key="frame" x="0.0" y="0.0" width="190.5" height="31"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Андрей Сандлер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qk0-JO-crj">
+                                        <rect key="frame" x="21" y="47" width="148" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Альбина" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIL-Nj-76B">
+                                        <rect key="frame" x="57.5" y="84.5" width="75" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ксения Птицына" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDM-z7-FKC">
+                                        <rect key="frame" x="21.5" y="122" width="147" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zhQ-75-gUk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aif-tA-p7T" firstAttribute="centerX" secondItem="7cX-cx-stz" secondAttribute="centerX" id="iNB-6l-BBn"/>
+                            <constraint firstItem="aif-tA-p7T" firstAttribute="centerY" secondItem="7cX-cx-stz" secondAttribute="centerY" id="inR-tc-0H5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="figure.stand" catalog="system" id="DYL-gn-Ukc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UhO-yd-Ihd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6365.625" y="-3.1690140845070425"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WZg-XG-V5y">
@@ -248,8 +300,30 @@
             </objects>
             <point key="canvasLocation" x="1683.75" y="-3.1690140845070425"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="78i-iq-rOD">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="LsB-lo-ktE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="MBE-Wi-HYc"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9N7-4C-grC">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8mt-hE-U9d" kind="relationship" relationship="viewControllers" id="xDW-fr-dFR"/>
+                        <segue destination="AF7-yZ-2uR" kind="relationship" relationship="viewControllers" id="q9G-Kw-kNK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KsH-mw-0Bh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4753" y="-3"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="figure.stand" catalog="system" width="74" height="128"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

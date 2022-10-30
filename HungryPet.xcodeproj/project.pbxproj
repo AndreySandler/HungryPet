@@ -17,6 +17,7 @@
 		83F498232909A9A1003770BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F498212909A9A1003770BF /* Main.storyboard */; };
 		83F498252909A9A2003770BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F498242909A9A2003770BF /* Assets.xcassets */; };
 		83F498282909A9A2003770BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F498262909A9A2003770BF /* LaunchScreen.storyboard */; };
+		8B608219290F355400231B1D /* DevelopersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B608218290F355400231B1D /* DevelopersViewController.swift */; };
 		8BA8FB91290BE462000606CC /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA8FB90290BE462000606CC /* Food.swift */; };
 		8BA8FB93290C3AF1000606CC /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA8FB92290C3AF1000606CC /* DataStore.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,7 @@
 		83F498242909A9A2003770BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83F498272909A9A2003770BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83F498292909A9A2003770BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B608218290F355400231B1D /* DevelopersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersViewController.swift; sourceTree = "<group>"; };
 		8BA8FB90290BE462000606CC /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		8BA8FB92290C3AF1000606CC /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +58,7 @@
 				8364ED28290D88DE00D5C9AC /* RecipesViewController.swift */,
 				8364ED2A290E97FA00D5C9AC /* DetailRecipeViewController.swift */,
 				5577548E290ED27900004B39 /* CatEmotionViewController.swift */,
+				8B608218290F355400231B1D /* DevelopersViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				8BA8FB93290C3AF1000606CC /* DataStore.swift in Sources */,
 				8364ED29290D88DE00D5C9AC /* RecipesViewController.swift in Sources */,
 				83F4981E2909A9A1003770BF /* SceneDelegate.swift in Sources */,
+				8B608219290F355400231B1D /* DevelopersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
