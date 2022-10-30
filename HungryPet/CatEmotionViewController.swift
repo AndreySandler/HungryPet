@@ -18,6 +18,7 @@ class CatEmotionViewController: UIViewController {
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addVerticalGradientLayer()
         catEmotionImageView.image = UIImage(named: "sleeping")
     }
     
