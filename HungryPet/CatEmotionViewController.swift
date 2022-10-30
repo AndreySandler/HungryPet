@@ -18,9 +18,9 @@ class CatEmotionViewController: UIViewController {
     }
     
     @IBAction func feedButtonDidTapped() {
-        if dishType == "vegetarian" {
+        if dishType == "Вегетарианское" {
             catEmotionImageView.image = UIImage(named: "sick")
-        } else if dishType == "gourmet" {
+        } else if dishType == "Для гурманов" {
             catEmotionImageView.image = UIImage(named: "happy")
         } else {
             catEmotionImageView.image = UIImage(named: "neutral")

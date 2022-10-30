@@ -15,7 +15,7 @@ struct Food {
         
         let sandwich = Food(
             title: "Сочный сэндвич за 2 минуты",
-            cuisineType: "vegetarian",
+            cuisineType: "Вегетарианское",
             products: [
                 "Яйцо",
                 "Хлеб",
@@ -27,7 +27,7 @@ struct Food {
         
         let salad = Food(
             title: "Летний полезный салат",
-            cuisineType: "vegetarian",
+            cuisineType: "Вегетарианское",
             products: [
                 "Помидор",
                 "Огурец",
@@ -38,7 +38,7 @@ struct Food {
         
         let vegetableRice = Food(
             title: "Жареный рис с овощами",
-            cuisineType: "vegetarian",
+            cuisineType: "Вегетарианское",
             products: [
                 "Помидор",
                 "Рис",
@@ -50,7 +50,7 @@ struct Food {
         
         let friedPotatoes = Food(
             title: "Золотистая картошечка на сковороде",
-            cuisineType: "vegetarian",
+            cuisineType: "Вегетарианское",
             products: [
                 "Картофель"
             ]
@@ -59,7 +59,7 @@ struct Food {
         
         let macAndCheese = Food(
             title: "Макнчиз в американском стиле",
-            cuisineType: "vegetarian",
+            cuisineType: "Вегетарианское",
             products: [
                 "Макароны",
                 "Сыр",
@@ -70,7 +70,7 @@ struct Food {
         
         let bakedChicken = Food(
             title: "Запеченая курочка в духовке",
-            cuisineType: "regular",
+            cuisineType: "Обычное",
             products: [
                 "Курица"
             ]
@@ -79,7 +79,7 @@ struct Food {
         
         let cutlets = Food(
             title: "Котлеты как у мамы",
-            cuisineType: "regular",
+            cuisineType: "Обычное",
             products: [
                 "Курица",
                 "Лук",
@@ -91,7 +91,7 @@ struct Food {
         
         let casserole = Food(
             title: "Аппетичная запеканка с воздушной корочкой",
-            cuisineType: "regular",
+            cuisineType: "Обычное",
             products: [
                 "Курица",
                 "Картофель",
@@ -104,7 +104,7 @@ struct Food {
         
         let wokWithChiken = Food(
             title: "Азиатский вок",
-            cuisineType: "regular",
+            cuisineType: "Обычное",
             products: [
                 "Курица",
                 "Макароны",
@@ -117,7 +117,7 @@ struct Food {
         
         let pizza = Food(
             title: "Домашняя пицца Маргарита",
-            cuisineType: "regular",
+            cuisineType: "Обычное",
             products: [
                 "Мука",
                 "Яйцо",
@@ -130,7 +130,7 @@ struct Food {
         
         let friedFish = Food(
             title: "Слегка обжаренная рыба",
-            cuisineType: "gourmet",
+            cuisineType: "Для гурманов",
             products: [
                 "Рыба",
                 "Помидор",
@@ -141,7 +141,7 @@ struct Food {
         
         let avokadoToast = Food(
             title: "Апптетиный авокадо-тост",
-            cuisineType: "gourmet",
+            cuisineType: "Для гурманов",
             products: [
                 "Авокадо",
                 "Хлеб",
@@ -152,7 +152,7 @@ struct Food {
         
         let poke = Food(
             title: "Рыбный поке",
-            cuisineType: "gourmet",
+            cuisineType: "Для гурманов",
             products: [
                 "Рыба",
                 "Авокадо",
@@ -166,7 +166,7 @@ struct Food {
         
         let creamyPasta = Food(
             title: "Паста с грибами в сливочном соусе",
-            cuisineType: "gourmet",
+            cuisineType: "Для гурманов",
             products: [
                 "Макароны",
                 "Молоко",
@@ -178,7 +178,7 @@ struct Food {
         
         let chikenFricassee = Food(
             title: "Куриное фрикассе с овощами",
-            cuisineType: "gourmet",
+            cuisineType: "Для гурманов",
             products: [
                 "Курица",
                 "Молоко",
@@ -195,12 +195,6 @@ struct Food {
 struct Product {
     let title: String
 }
-
-//enum CuisineType: String {
-//    case vegetarian = "Вегетерианское"
-//    case regular = "Обычное"
-//    case gourmet = "Для гурманов"
-//}
 
 enum Dish {
     case sandwich
