@@ -192,7 +192,7 @@ struct Food {
     }
 }
 
-struct Product: Equatable {
+struct Product {
     let title: String
 }
 
