@@ -61,7 +61,7 @@ class RecipesViewController: UITableViewController {
         var recipes: [String] = []
         
         for dish in food {
-            if dish.products == currentIngredients {
+            if dish.products.sorted() == currentIngredients.sorted() {
                 recipes.append(dish.title)
             }
         }
