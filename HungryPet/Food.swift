@@ -15,7 +15,7 @@ struct Food {
         
         let sandwich = Food(
             title: "Сочный сэндвич за 2 минуты",
-            cuisineType: "vegeterian",
+            cuisineType: "vegetarian",
             products: [
                 "Яйцо",
                 "Хлеб",
