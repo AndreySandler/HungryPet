@@ -13,7 +13,8 @@ class RecipesViewController: UITableViewController {
     let food = Food.getRecipe()
     
     var products: [Product] = []
-    var recipeTypes: [String] = [] 
+    var recipeTypes: [String] = []
+    var recipesTutorial: [String] = []
     
     var avaibleDish: [String] {
         getRecipes()
@@ -61,6 +62,7 @@ class RecipesViewController: UITableViewController {
             if dish.products.sorted() == currentIngredients.sorted() {
                 recipes.append(dish.title)
                 recipeTypes.append(dish.cuisineType)
+                recipesTutorial.append(dish.recipe)
             }
         }
         return recipes
@@ -73,5 +75,6 @@ class RecipesViewController: UITableViewController {
         
         detailsVC?.recipeTitle = avaibleDish[indexPath.row]
         detailsVC?.recipeTypeTitle = recipeTypes[indexPath.row]
+        detailsVC?.recipeTutorialText = recipesTutorial[indexPath.row]
     }
 }
