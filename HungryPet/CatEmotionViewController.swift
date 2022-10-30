@@ -19,6 +19,7 @@ class CatEmotionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         catEmotionImageView.image = UIImage(named: "sleeping")
+
     }
     
     // MARK: - IBActions
