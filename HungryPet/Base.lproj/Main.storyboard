@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hq6-KV-IAj">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -42,8 +42,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Мои Продукты" customizationIdentifier="" id="iHQ-z2-Frv">
-                        <barButtonItem key="backBarButtonItem" title="Назад" id="Q4u-kf-N0Y"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="EDY-cp-G8s">
+                        <barButtonItem key="backBarButtonItem" title="Продукты" id="Q4u-kf-N0Y"/>
+                        <barButtonItem key="rightBarButtonItem" title="Готово" id="EDY-cp-G8s">
                             <connections>
                                 <segue destination="yw3-V3-aPk" kind="show" id="tG4-NN-heA"/>
                             </connections>
@@ -105,65 +105,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epZ-eI-Cpc">
-                                <rect key="frame" x="16" y="50" width="288" height="31.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epZ-eI-Cpc">
+                                <rect key="frame" x="16" y="61" width="288" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="E3o-7f-RNv">
-                                <rect key="frame" x="16" y="109" width="125" height="18"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип блюда:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcm-t1-Av9">
-                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTx-gi-emx">
-                                        <rect key="frame" x="87.5" y="0.0" width="37.5" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="rwV-lh-9DH">
-                                <rect key="frame" x="16" y="135" width="56" height="18"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="H3r-fE-iJE">
+                                <rect key="frame" x="16" y="133.5" width="288" height="43"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рецепт:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUt-Dy-nTI">
-                                        <rect key="frame" x="0.0" y="0.0" width="56" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст рецепта" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLs-KB-TRA">
+                                        <rect key="frame" x="0.0" y="26.5" width="94" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст рецепта" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLs-KB-TRA">
-                                <rect key="frame" x="16" y="161" width="288" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип блюда:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcm-t1-Av9">
+                                <rect key="frame" x="16" y="102" width="99" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTx-gi-emx">
+                                <rect key="frame" x="125" y="102" width="44" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dhv-mW-flB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="rwV-lh-9DH" firstAttribute="top" secondItem="E3o-7f-RNv" secondAttribute="bottom" constant="8" id="ApU-G7-BHR"/>
-                            <constraint firstItem="hLs-KB-TRA" firstAttribute="leading" secondItem="Dhv-mW-flB" secondAttribute="leading" constant="16" id="CYb-x9-WFg"/>
-                            <constraint firstItem="epZ-eI-Cpc" firstAttribute="top" secondItem="Dhv-mW-flB" secondAttribute="top" constant="6" id="EzW-70-LWy"/>
-                            <constraint firstItem="Dhv-mW-flB" firstAttribute="trailing" secondItem="epZ-eI-Cpc" secondAttribute="trailing" constant="16" id="Fv9-Nv-hlR"/>
-                            <constraint firstItem="hLs-KB-TRA" firstAttribute="top" secondItem="rwV-lh-9DH" secondAttribute="bottom" constant="8" id="aW9-6T-1OZ"/>
-                            <constraint firstItem="E3o-7f-RNv" firstAttribute="leading" secondItem="Dhv-mW-flB" secondAttribute="leading" constant="16" id="cl2-nU-9mT"/>
-                            <constraint firstItem="rwV-lh-9DH" firstAttribute="leading" secondItem="Dhv-mW-flB" secondAttribute="leading" constant="16" id="dnN-90-Mu5"/>
-                            <constraint firstItem="E3o-7f-RNv" firstAttribute="top" secondItem="epZ-eI-Cpc" secondAttribute="bottom" constant="27.5" id="ha8-42-Xds"/>
-                            <constraint firstItem="epZ-eI-Cpc" firstAttribute="leading" secondItem="Dhv-mW-flB" secondAttribute="leading" constant="16" id="pPg-xx-uDr"/>
-                            <constraint firstItem="Dhv-mW-flB" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hLs-KB-TRA" secondAttribute="bottom" constant="16" id="sSp-ul-5s2"/>
-                            <constraint firstItem="Dhv-mW-flB" firstAttribute="trailing" secondItem="hLs-KB-TRA" secondAttribute="trailing" constant="16" id="uMe-d3-Je2"/>
+                            <constraint firstItem="CTx-gi-emx" firstAttribute="top" secondItem="epZ-eI-Cpc" secondAttribute="bottom" constant="10" id="0rf-bZ-YTt"/>
+                            <constraint firstItem="Dhv-mW-flB" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="CTx-gi-emx" secondAttribute="trailing" constant="151" id="8yK-kK-1aW"/>
+                            <constraint firstItem="H3r-fE-iJE" firstAttribute="top" secondItem="gcm-t1-Av9" secondAttribute="bottom" constant="10" id="9UB-XR-4Jz"/>
+                            <constraint firstItem="Dhv-mW-flB" firstAttribute="trailing" secondItem="H3r-fE-iJE" secondAttribute="trailing" constant="16" id="Tvb-V9-K8I"/>
+                            <constraint firstItem="CTx-gi-emx" firstAttribute="leading" secondItem="gcm-t1-Av9" secondAttribute="trailing" constant="10" id="bDL-Iv-s7g"/>
+                            <constraint firstItem="H3r-fE-iJE" firstAttribute="leading" secondItem="Dhv-mW-flB" secondAttribute="leading" constant="16" id="c6y-x9-x5f"/>
+                            <constraint firstItem="gcm-t1-Av9" firstAttribute="leading" secondItem="Dhv-mW-flB" secondAttribute="leading" constant="16" id="dmv-f1-THH"/>
+                            <constraint firstItem="gcm-t1-Av9" firstAttribute="top" secondItem="epZ-eI-Cpc" secondAttribute="bottom" constant="10" id="dn2-6o-1Ew"/>
+                            <constraint firstItem="Dhv-mW-flB" firstAttribute="trailing" secondItem="epZ-eI-Cpc" secondAttribute="trailing" constant="16" id="hAh-q8-fVx"/>
+                            <constraint firstItem="epZ-eI-Cpc" firstAttribute="top" secondItem="Dhv-mW-flB" secondAttribute="top" constant="17" id="pTW-jc-9fk"/>
+                            <constraint firstItem="epZ-eI-Cpc" firstAttribute="leading" secondItem="Dhv-mW-flB" secondAttribute="leading" constant="16" id="uyF-1A-MoF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="SxR-kd-glm">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="burst" catalog="system" id="o8Y-uD-SZA">
+                        <barButtonItem key="rightBarButtonItem" title="Котятя" id="o8Y-uD-SZA">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="8mt-hE-U9d" kind="show" id="ONl-Jy-Y1g"/>
                             </connections>
@@ -194,9 +190,15 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uij-ny-Zex">
-                                <rect key="frame" x="113.5" y="524" width="93" height="11"/>
+                                <rect key="frame" x="73" y="433.5" width="174" height="34.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="kgh-U2-HQB"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Кормить"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Покормить котятю">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="feedButtonDidTapped" destination="8mt-hE-U9d" eventType="touchUpInside" id="fqC-Hm-vCK"/>
                                 </connections>
@@ -206,10 +208,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7jg-OK-xYK" firstAttribute="leading" secondItem="z6m-8T-kSg" secondAttribute="leading" id="Glw-pM-eUY"/>
-                            <constraint firstItem="uij-ny-Zex" firstAttribute="top" secondItem="7jg-OK-xYK" secondAttribute="bottom" constant="28" id="ddB-Hq-jOA"/>
-                            <constraint firstItem="z6m-8T-kSg" firstAttribute="bottom" secondItem="uij-ny-Zex" secondAttribute="bottom" constant="33" id="hdG-xU-JwI"/>
+                            <constraint firstItem="z6m-8T-kSg" firstAttribute="bottom" secondItem="uij-ny-Zex" secondAttribute="bottom" constant="100" id="XEz-ZZ-bnm"/>
                             <constraint firstItem="7jg-OK-xYK" firstAttribute="trailing" secondItem="z6m-8T-kSg" secondAttribute="trailing" id="m7Q-1n-9LU"/>
-                            <constraint firstItem="uij-ny-Zex" firstAttribute="centerX" secondItem="yyb-ze-IsD" secondAttribute="centerX" id="oO7-4Y-Kql"/>
+                            <constraint firstItem="uij-ny-Zex" firstAttribute="centerX" secondItem="yyb-ze-IsD" secondAttribute="centerX" id="muB-os-jiW"/>
                             <constraint firstItem="7jg-OK-xYK" firstAttribute="top" secondItem="z6m-8T-kSg" secondAttribute="top" id="wEt-zu-sdz"/>
                         </constraints>
                     </view>
@@ -242,7 +243,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="burst" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

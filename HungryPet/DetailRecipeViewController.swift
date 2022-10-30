@@ -21,6 +21,7 @@ class DetailRecipeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addVerticalGradientLayer()
         
         titleLabel.text = recipeTitle
         typeLabel.text = recipeTypeTitle
@@ -30,5 +31,10 @@ class DetailRecipeViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let catEmotionVC = segue.destination as? CatEmotionViewController
         catEmotionVC?.dishType = recipeTypeTitle
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = "Назад"
+        backItem.tintColor = .white
+        navigationItem.backBarButtonItem = backItem
     }
 }
