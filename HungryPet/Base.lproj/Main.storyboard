@@ -112,31 +112,54 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="E3o-7f-RNv">
-                                <rect key="frame" x="16" y="109" width="164.5" height="25.5"/>
+                                <rect key="frame" x="16" y="109" width="125" height="18"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип блюда:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcm-t1-Av9">
-                                        <rect key="frame" x="0.0" y="0.0" width="107.5" height="25.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTx-gi-emx">
-                                        <rect key="frame" x="114.5" y="0.0" width="50" height="25.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <rect key="frame" x="87.5" y="0.0" width="37.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="rwV-lh-9DH">
+                                <rect key="frame" x="16" y="135" width="56" height="18"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рецепт:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUt-Dy-nTI">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст рецепта" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLs-KB-TRA">
+                                <rect key="frame" x="16" y="161" width="288" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dhv-mW-flB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="rwV-lh-9DH" firstAttribute="top" secondItem="E3o-7f-RNv" secondAttribute="bottom" constant="8" id="ApU-G7-BHR"/>
+                            <constraint firstItem="hLs-KB-TRA" firstAttribute="leading" secondItem="Dhv-mW-flB" secondAttribute="leading" constant="16" id="CYb-x9-WFg"/>
                             <constraint firstItem="epZ-eI-Cpc" firstAttribute="top" secondItem="Dhv-mW-flB" secondAttribute="top" constant="6" id="EzW-70-LWy"/>
                             <constraint firstItem="Dhv-mW-flB" firstAttribute="trailing" secondItem="epZ-eI-Cpc" secondAttribute="trailing" constant="16" id="Fv9-Nv-hlR"/>
+                            <constraint firstItem="hLs-KB-TRA" firstAttribute="top" secondItem="rwV-lh-9DH" secondAttribute="bottom" constant="8" id="aW9-6T-1OZ"/>
                             <constraint firstItem="E3o-7f-RNv" firstAttribute="leading" secondItem="Dhv-mW-flB" secondAttribute="leading" constant="16" id="cl2-nU-9mT"/>
+                            <constraint firstItem="rwV-lh-9DH" firstAttribute="leading" secondItem="Dhv-mW-flB" secondAttribute="leading" constant="16" id="dnN-90-Mu5"/>
                             <constraint firstItem="E3o-7f-RNv" firstAttribute="top" secondItem="epZ-eI-Cpc" secondAttribute="bottom" constant="27.5" id="ha8-42-Xds"/>
                             <constraint firstItem="epZ-eI-Cpc" firstAttribute="leading" secondItem="Dhv-mW-flB" secondAttribute="leading" constant="16" id="pPg-xx-uDr"/>
+                            <constraint firstItem="Dhv-mW-flB" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hLs-KB-TRA" secondAttribute="bottom" constant="16" id="sSp-ul-5s2"/>
+                            <constraint firstItem="Dhv-mW-flB" firstAttribute="trailing" secondItem="hLs-KB-TRA" secondAttribute="trailing" constant="16" id="uMe-d3-Je2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="SxR-kd-glm">
@@ -147,6 +170,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="recipeLabel" destination="hLs-KB-TRA" id="Ue1-hl-vPc"/>
                         <outlet property="titleLabel" destination="epZ-eI-Cpc" id="GlX-P1-tfT"/>
                         <outlet property="typeLabel" destination="CTx-gi-emx" id="Vvu-ZJ-gXt"/>
                     </connections>
