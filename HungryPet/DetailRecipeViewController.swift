@@ -27,5 +27,9 @@ class DetailRecipeViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let catEmotionVC = segue.destination as? CatEmotionViewController
         catEmotionVC?.dishType = recipeTypeTitle
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = recipeTitle
+        navigationItem.backBarButtonItem = backItem
     }
 }

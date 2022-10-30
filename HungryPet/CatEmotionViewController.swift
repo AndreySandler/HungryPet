@@ -15,7 +15,9 @@ class CatEmotionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         catEmotionImageView.image = UIImage(named: "sleeping")
+
     }
+    
     @IBAction func feedButtonDidTapped() {
         if dishType == "vegetarian" {
             catEmotionImageView.image = UIImage(named: "sick")
