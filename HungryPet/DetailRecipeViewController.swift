@@ -12,7 +12,7 @@ class DetailRecipeViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var typeLabel: UILabel!
-    @IBOutlet var recipeLabel: UILabel!
+    @IBOutlet var recipeTextView: UITextView!
     
     // MARK: - Public Properties
     var recipeTitle: String!
@@ -22,10 +22,11 @@ class DetailRecipeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer()
+        recipeTextView.font = .systemFont(ofSize: 17)
         
         titleLabel.text = recipeTitle
         typeLabel.text = recipeTypeTitle
-        recipeLabel.text = recipeTutorialText
+        recipeTextView.text = recipeTutorialText
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
