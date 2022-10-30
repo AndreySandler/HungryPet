@@ -159,6 +159,7 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="SxR-kd-glm">
                         <barButtonItem key="rightBarButtonItem" title="Котятя" id="o8Y-uD-SZA">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="8mt-hE-U9d" kind="show" id="ONl-Jy-Y1g"/>
                             </connections>
