@@ -10,22 +10,21 @@ import UIKit
 class RecipesViewController: UITableViewController {
     
     // MARK: - Public Properties
+    let sandwich = Food.getRecipe(for: .sandwich)
     var products: [Product] = []
+    var currentIngredients: [String] {
+        getIngredients(products)
+    }
     
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        getIngredients()
-        
     }
     
     // MARK: - UITableViewDataSoure
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//
-//    }
-    
+
     // MARK: - Private Methods
-    private func getIngredients() -> [String] {
+    private func getIngredients(_ products: [Product]) -> [String] {
         var ingredients: [String] = []
         
         products.forEach { product in
@@ -33,4 +32,8 @@ class RecipesViewController: UITableViewController {
         }
         return ingredients
     }
+    
+//    private func getRecipes() -> [String] {
+//        
+//    }
 }

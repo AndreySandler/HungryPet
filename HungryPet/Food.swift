@@ -8,18 +8,213 @@
 struct Food {
     let title: String
     let cuisineType: CuisineType
+    let products: [Product]
+    
+    static func getRecipe(for dish: Dish) -> Food {
+        switch dish {
+        case .sandwich:
+            let sandwich = Food(
+                title: "Сочный сэндвич за 2 минуты",
+                cuisineType: .vegetarian,
+                products: [
+                    Product(title: "Яйцо"),
+                    Product(title: "Хлеб"),
+                    Product(title: "Сыр"),
+                    Product(title: "Майонез")
+                ]
+            )
+            return sandwich
+            
+        case .salad:
+            let salad = Food(
+                title: "Летний полезный салат",
+                cuisineType: .vegetarian,
+                products: [
+                    Product(title: "Помидор"),
+                    Product(title: "Огурец"),
+                    Product(title: "Лук")
+                ]
+            )
+            return salad
+            
+        case .vegetableRice:
+            let vegetableRice = Food(
+                title: "Жареный рис с овощами",
+                cuisineType: .vegetarian,
+                products: [
+                    Product(title: "Помидор"),
+                    Product(title: "Рис"),
+                    Product(title: "Яйцо"),
+                    Product(title: "Лук")
+                ]
+            )
+            return vegetableRice
+            
+        case .friedPotatoes:
+            let friedPotatoes = Food(
+                title: "Золотистая картошечка на сковороде",
+                cuisineType: .vegetarian,
+                products: [
+                    Product(title: "Картофель")
+                ]
+            )
+            return friedPotatoes
+            
+        case .maсAndCheese:
+            let macAndCheese = Food(
+                title: "Макнчиз в американском стиле",
+                cuisineType: .vegetarian,
+                products: [
+                    Product(title: "Макароны"),
+                    Product(title: "Сыр"),
+                    Product(title: "Молоко")
+                ]
+            )
+            return macAndCheese
+            
+        case .bakedChicken:
+            let bakedChicken = Food(
+                title: "Запеченая курочка в духовке",
+                cuisineType: .regular,
+                products: [
+                    Product(title: "Курица")
+                ]
+            )
+            return bakedChicken
+            
+        case .cutlets:
+            let cutlets = Food(
+                title: "Котлеты как у мамы",
+                cuisineType: .regular,
+                products: [
+                    Product(title: "Курица"),
+                    Product(title: "Лук"),
+                    Product(title: "Яйцо"),
+                    Product(title: "Хлеб")
+                ]
+            )
+            return cutlets
+            
+        case .casserole:
+            let casserole = Food(
+                title: "Аппетичная запеканка с воздушной корочкой",
+                cuisineType: .regular,
+                products: [
+                    Product(title: "Курица"),
+                    Product(title: "Картофель"),
+                    Product(title: "Помидор"),
+                    Product(title: "Майонез"),
+                    Product(title: "Сыр")
+                ]
+            )
+            return casserole
+            
+        case .wokWithChicken:
+            let wokWithChiken = Food(
+                title: "Азиатский вок",
+                cuisineType: .regular,
+                products: [
+                    Product(title: "Курица"),
+                    Product(title: "Макароны"),
+                    Product(title: "Помидор"),
+                    Product(title: "Грибы"),
+                    Product(title: "Лук")
+                ]
+            )
+            return wokWithChiken
+            
+        case .pizza:
+            let pizza = Food(
+                title: "Домашняя пицца Маргарита",
+                cuisineType: .regular,
+                products: [
+                    Product(title: "Мука"),
+                    Product(title: "Яйцо"),
+                    Product(title: "Сыр"),
+                    Product(title: "Майонез"),
+                    Product(title: "Помидор")
+                ]
+            )
+            return pizza
+            
+        case .friedFish:
+            let friedFish = Food(
+                title: "Слегка обжаренная рыба",
+                cuisineType: .gourmet,
+                products: [
+                    Product(title: "Рыба"),
+                    Product(title: "Помидор"),
+                    Product(title: "Лук")
+                ]
+            )
+            return friedFish
+            
+        case .avokadoToast:
+            let avokadoToast = Food(
+                title: "Апптетиный авокадо-тост",
+                cuisineType: .gourmet,
+                products: [
+                    Product(title: "Авокадо"),
+                    Product(title: "Хлеб"),
+                    Product(title: "Яйцо")
+                ]
+            )
+            return avokadoToast
+            
+        case .poke:
+            let poke = Food(
+                title: "Рыбный поке",
+                cuisineType: .gourmet,
+                products: [
+                    Product(title: "Рыба"),
+                    Product(title: "Авокадо"),
+                    Product(title: "Помидор"),
+                    Product(title: "Лук"),
+                    Product(title: "Яйцо"),
+                    Product(title: "Огурец")
+                ]
+            )
+            return poke
+            
+        case .creamyPasta:
+            let creamyPasta = Food(
+                title: "Паста с грибами в сливочном соусе",
+                cuisineType: .gourmet,
+                products: [
+                    Product(title: "Макароны"),
+                    Product(title: "Молоко"),
+                    Product(title: "Сыр"),
+                    Product(title: "Грибы")
+                ]
+            )
+            return creamyPasta
+            
+        case .chickenFricassee:
+            let chikenFricassee = Food(
+                title: "Куриное фрикассе с овощами",
+                cuisineType: .gourmet,
+                products: [
+                    Product(title: "Курица"),
+                    Product(title: "Молоко"),
+                    Product(title: "Мука"),
+                    Product(title: "Грибы")
+                ]
+            )
+            return chikenFricassee
+        }
+    }
 }
 
-struct Product {
-    let title: String
-}
-
-enum CuisineType {
-    case vegetarian
-    case regular
-    case gourmet
-}
-
+struct Product: Equatable {
+        let title: String
+    }
+    
+    enum CuisineType {
+        case vegetarian
+        case regular
+        case gourmet
+    }
+    
 enum Dish {
     case sandwich
     case salad
@@ -39,295 +234,3 @@ enum Dish {
     case creamyPasta
     case chickenFricassee
 }
-
-func getRecipe(for dish: Dish) -> String {
-    switch dish {
-    case .sandwich:
-        let sandwich = Food(
-            title: "Сочный сэндвич за 2 минуты",
-            cuisineType: .vegetarian
-        )
-        return "Рецепт \(sandwich.title)."
-        
-    case .salad:
-        let salad = Food(
-            title: "Летний полезный салат",
-            cuisineType: .vegetarian
-        )
-        return "Рецепт салата \(salad.title)"
-        
-    case .vegetableRice:
-        let vegetableRice = Food(
-            title: "Жареный рис с овощами",
-            cuisineType: .vegetarian
-        )
-        return "Рецепт жареного риса с овощами \(vegetableRice)"
-        
-    case .friedPotatoes:
-        let friedPotatoes = Food(
-            title: "Золотистая картошечка на сковороде",
-            cuisineType: .vegetarian
-        )
-        return "Рецепт жареной картошки \(friedPotatoes)"
-        
-    case .maсAndCheese:
-        let macAndCheese = Food(
-            title: "Макнчиз в американском стиле",
-            cuisineType: .vegetarian
-        )
-        return "Рецепт лучших макарон с сыром \(macAndCheese)"
-        
-    case .bakedChicken:
-        let bakedChicken = Food(
-            title: "Запеченая курочка в духовке",
-            cuisineType: .regular
-        )
-        return "Вот так вот раз раз \(bakedChicken)"
-        
-    case .cutlets:
-        let cutlets = Food(
-            title: "Котлеты как у мамы",
-            cuisineType: .regular
-        )
-        return "Вот так вот раз раз \(cutlets)"
-        
-    case .casserole:
-        let casserole = Food(
-            title: "Аппетичная запеканка с воздушной корочкой",
-            cuisineType: .regular
-        )
-        return "Вот так вот раз раз \(casserole)"
-        
-    case .wokWithChicken:
-        let wokWithChiken = Food(
-            title: "Азиатский вок",
-            cuisineType: .regular
-        )
-        return "Азиатский вок с курочкой \(wokWithChiken)"
-        
-    case .pizza:
-        let pizza = Food(
-            title: "Домашняя пицца Маргарита",
-            cuisineType: .regular
-        )
-        return "Вот так вот раз раз \(pizza)"
-        
-    case .friedFish:
-        let friedFish = Food(
-            title: "Слегка обжаренная рыба",
-            cuisineType: .gourmet
-        )
-        return "Супер изысканная рыбка \(friedFish)"
-        
-    case .avokadoToast:
-        let avokadoToast = Food(
-            title: "Апптетиный авокадо-тост",
-            cuisineType: .gourmet
-        )
-        return "Инстаграмный тост \(avokadoToast)"
-        
-    case .poke:
-        let poke = Food(
-            title: "Рыбный поке",
-            cuisineType: .gourmet
-        )
-        return "Незабываемый поке \(poke)"
-        
-    case .creamyPasta:
-        let creamyPasta = Food(
-            title: "Паста с грибами в сливочном соусе",
-            cuisineType: .gourmet
-        )
-        return "Паста лучше чем в ресторане \(creamyPasta)"
-        
-    case .chickenFricassee:
-        let chikenFricassee = Food(
-            title: "Куриное фрикассе с овощами",
-            cuisineType: .gourmet
-        )
-        return "Такого ты еще не пробовал. Спойлер: это просто сливочная курица. \(chikenFricassee)"
-    }
-    
-    func getIngredient(for dish: Dish) -> [String] {
-        var recipe: [String] = []
-        
-        switch dish {
-        case .sandwich:
-            for ingredient in DataStore.shared.foodList {
-                if ingredient == "Яйцо",
-                   ingredient == "Хлеб",
-                   ingredient == "Сыр",
-                   ingredient == "Майонез"
-                {
-                    recipe.append(ingredient)
-                }
-            }
-            return recipe
-            
-        case .salad:
-            for ingredient in DataStore.shared.foodList {
-                if ingredient == "Помидор",
-                   ingredient == "Огурец",
-                   ingredient == "Лук"
-                {
-                    recipe.append(ingredient)
-                }
-            }
-            return recipe
-            
-        case .vegetableRice:
-            for ingredient in DataStore.shared.foodList {
-                if ingredient == "Помидор",
-                   ingredient == "Рис",
-                   ingredient == "Яйцо",
-                   ingredient == "Лук"
-                {
-                    recipe.append(ingredient)
-                }
-            }
-            return recipe
-            
-        case .friedPotatoes:
-            for ingredient in DataStore.shared.foodList {
-                if ingredient == "Картофель"
-                {
-                    recipe.append(ingredient)
-                }
-            }
-            return recipe
-            
-        case .maсAndCheese:
-            for ingredient in DataStore.shared.foodList {
-                if ingredient == "Макароны",
-                   ingredient == "Сыр",
-                   ingredient == "Молоко"
-                {
-                    recipe.append(ingredient)
-                }
-            }
-            return recipe
-            
-        case .bakedChicken:
-            for ingredient in DataStore.shared.foodList {
-                if ingredient == "Курица"
-                {
-                    recipe.append(ingredient)
-                }
-            }
-            return recipe
-            
-        case .cutlets:
-            for ingredient in DataStore.shared.foodList {
-                if ingredient == "Курица",
-                   ingredient == "Лук",
-                   ingredient == "Яйцо",
-                   ingredient == "Хлеб"
-                {
-                    recipe.append(ingredient)
-                }
-            }
-            return recipe
-            
-        case .casserole:
-            for ingredient in DataStore.shared.foodList {
-                if ingredient == "Курица",
-                   ingredient == "Картофель",
-                   ingredient == "Помидор",
-                   ingredient == "Майонез",
-                   ingredient == "Сыр"
-                {
-                    recipe.append(ingredient)
-                }
-            }
-            return recipe
-            
-        case .wokWithChicken:
-            for ingredient in DataStore.shared.foodList {
-                if ingredient == "Курица",
-                   ingredient == "Макароны",
-                   ingredient == "Помидор",
-                   ingredient == "Грибы",
-                   ingredient == "Лук"
-                {
-                    recipe.append(ingredient)
-                }
-            }
-            return recipe
-            
-        case .pizza:
-            for ingredient in DataStore.shared.foodList {
-                if ingredient == "Мука",
-                   ingredient == "Яйцо",
-                   ingredient == "Сыр",
-                   ingredient == "Майонез",
-                   ingredient == "Помидор"
-                {
-                    recipe.append(ingredient)
-                }
-            }
-            return recipe
-            
-        case .friedFish:
-            for ingredient in DataStore.shared.foodList {
-                if ingredient == "Рыба",
-                   ingredient == "Помидор",
-                   ingredient == "Лук"
-                {
-                    recipe.append(ingredient)
-                }
-            }
-            return recipe
-            
-        case .avokadoToast:
-            for ingredient in DataStore.shared.foodList {
-                if ingredient == "Авокадо",
-                   ingredient == "Хлеб",
-                   ingredient == "Яйцо"
-                {
-                    recipe.append(ingredient)
-                }
-            }
-            return recipe
-            
-        case .poke:
-            for ingredient in DataStore.shared.foodList {
-                if ingredient == "Рыба",
-                   ingredient == "Авокадо",
-                   ingredient == "Помидор",
-                   ingredient == "Лук",
-                   ingredient == "Яйцо",
-                   ingredient == "Огурец"
-                {
-                    recipe.append(ingredient)
-                }
-            }
-            return recipe
-            
-        case .creamyPasta:
-            for ingredient in DataStore.shared.foodList {
-                if ingredient == "Макароны",
-                   ingredient == "Молоко",
-                   ingredient == "Сыр",
-                   ingredient == "Грибы"
-                {
-                    recipe.append(ingredient)
-                }
-            }
-            return recipe
-            
-        case .chickenFricassee:
-            for ingredient in DataStore.shared.foodList {
-                if ingredient == "Курица",
-                   ingredient == "Молоко",
-                   ingredient == "Мука",
-                   ingredient == "Грибы"
-                {
-                    recipe.append(ingredient)
-                }
-            }
-            return recipe
-        }
-    }
-}
-    
-    
