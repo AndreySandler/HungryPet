@@ -139,7 +139,13 @@
                             <constraint firstItem="epZ-eI-Cpc" firstAttribute="leading" secondItem="Dhv-mW-flB" secondAttribute="leading" constant="16" id="pPg-xx-uDr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="SxR-kd-glm"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="SxR-kd-glm">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="burst" catalog="system" id="o8Y-uD-SZA">
+                            <connections>
+                                <segue destination="8mt-hE-U9d" kind="show" id="ONl-Jy-Y1g"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="titleLabel" destination="epZ-eI-Cpc" id="GlX-P1-tfT"/>
                         <outlet property="typeLabel" destination="CTx-gi-emx" id="Vvu-ZJ-gXt"/>
@@ -149,10 +155,52 @@
             </objects>
             <point key="canvasLocation" x="3986" y="-3"/>
         </scene>
+        <!--Cat Emotion View Controller-->
+        <scene sceneID="cIl-JA-6iT">
+            <objects>
+                <viewController id="8mt-hE-U9d" customClass="CatEmotionViewController" customModule="HungryPet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yyb-ze-IsD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7jg-OK-xYK">
+                                <rect key="frame" x="0.0" y="44" width="320" height="452"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7jg-OK-xYK" secondAttribute="height" multiplier="80:113" id="ZcT-sE-K4E"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uij-ny-Zex">
+                                <rect key="frame" x="113.5" y="524" width="93" height="11"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Кормить"/>
+                                <connections>
+                                    <action selector="feedButtonDidTapped" destination="8mt-hE-U9d" eventType="touchUpInside" id="fqC-Hm-vCK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="z6m-8T-kSg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7jg-OK-xYK" firstAttribute="leading" secondItem="z6m-8T-kSg" secondAttribute="leading" id="Glw-pM-eUY"/>
+                            <constraint firstItem="uij-ny-Zex" firstAttribute="top" secondItem="7jg-OK-xYK" secondAttribute="bottom" constant="28" id="ddB-Hq-jOA"/>
+                            <constraint firstItem="z6m-8T-kSg" firstAttribute="bottom" secondItem="uij-ny-Zex" secondAttribute="bottom" constant="33" id="hdG-xU-JwI"/>
+                            <constraint firstItem="7jg-OK-xYK" firstAttribute="trailing" secondItem="z6m-8T-kSg" secondAttribute="trailing" id="m7Q-1n-9LU"/>
+                            <constraint firstItem="uij-ny-Zex" firstAttribute="centerX" secondItem="yyb-ze-IsD" secondAttribute="centerX" id="oO7-4Y-Kql"/>
+                            <constraint firstItem="7jg-OK-xYK" firstAttribute="top" secondItem="z6m-8T-kSg" secondAttribute="top" id="wEt-zu-sdz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5wG-pt-gQX"/>
+                    <connections>
+                        <outlet property="catEmotionImageView" destination="7jg-OK-xYK" id="c4a-4C-qK2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2qA-jK-ZKF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4704.375" y="-3.1690140845070425"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="WZg-XG-V5y">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Oig-Dr-qyZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hq6-KV-IAj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="fQy-qx-oIO">
@@ -164,11 +212,13 @@
                         <segue destination="mah-Di-dPP" kind="relationship" relationship="rootViewController" id="6i6-2a-GRu"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oig-Dr-qyZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1683.75" y="-3.1690140845070425"/>
         </scene>
     </scenes>
     <resources>
+        <image name="burst" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

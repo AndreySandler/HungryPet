@@ -23,4 +23,9 @@ class DetailRecipeViewController: UIViewController {
         titleLabel.text = recipeTitle
         typeLabel.text = recipeTypeTitle
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let catEmotionVC = segue.destination as? CatEmotionViewController
+        catEmotionVC?.dishType = recipeTypeTitle
+    }
 }

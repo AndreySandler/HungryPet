@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5577548F290ED27900004B39 /* CatEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577548E290ED27900004B39 /* CatEmotionViewController.swift */; };
 		8364ED29290D88DE00D5C9AC /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8364ED28290D88DE00D5C9AC /* RecipesViewController.swift */; };
 		8364ED2B290E97FA00D5C9AC /* DetailRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8364ED2A290E97FA00D5C9AC /* DetailRecipeViewController.swift */; };
 		83A19003290B2570003C64BC /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A19002290B2570003C64BC /* ProductsViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5577548E290ED27900004B39 /* CatEmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatEmotionViewController.swift; sourceTree = "<group>"; };
 		8364ED28290D88DE00D5C9AC /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
 		8364ED2A290E97FA00D5C9AC /* DetailRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeViewController.swift; sourceTree = "<group>"; };
 		83A19002290B2570003C64BC /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				83A19002290B2570003C64BC /* ProductsViewController.swift */,
 				8364ED28290D88DE00D5C9AC /* RecipesViewController.swift */,
 				8364ED2A290E97FA00D5C9AC /* DetailRecipeViewController.swift */,
+				5577548E290ED27900004B39 /* CatEmotionViewController.swift */,
 				83F4981B2909A9A1003770BF /* AppDelegate.swift */,
 				83F4981D2909A9A1003770BF /* SceneDelegate.swift */,
 				8BA8FB90290BE462000606CC /* Food.swift */,
@@ -153,6 +156,7 @@
 				8BA8FB91290BE462000606CC /* Food.swift in Sources */,
 				83F4981C2909A9A1003770BF /* AppDelegate.swift in Sources */,
 				8364ED2B290E97FA00D5C9AC /* DetailRecipeViewController.swift in Sources */,
+				5577548F290ED27900004B39 /* CatEmotionViewController.swift in Sources */,
 				83A19003290B2570003C64BC /* ProductsViewController.swift in Sources */,
 				8BA8FB93290C3AF1000606CC /* DataStore.swift in Sources */,
 				8364ED29290D88DE00D5C9AC /* RecipesViewController.swift in Sources */,

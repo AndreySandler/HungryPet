@@ -13,7 +13,7 @@ class RecipesViewController: UITableViewController {
     let food = Food.getRecipe()
     
     var products: [Product] = []
-    var recipeTypes: [String] = []
+    var recipeTypes: [String] = [] 
     
     var avaibleDish: [String] {
         getRecipes()
@@ -60,7 +60,7 @@ class RecipesViewController: UITableViewController {
         for dish in food {
             if dish.products.sorted() == currentIngredients.sorted() {
                 recipes.append(dish.title)
-                recipeTypes.append(dish.cuisineType.rawValue)
+                recipeTypes.append(dish.cuisineType)
             }
         }
         return recipes
