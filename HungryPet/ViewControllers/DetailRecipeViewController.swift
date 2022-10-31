@@ -30,8 +30,14 @@ class DetailRecipeViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let catEmotionVC = segue.destination as? CatEmotionViewController
-        catEmotionVC?.dishType = recipeTypeTitle
+        guard let tabBarVC = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarVC.viewControllers else { return }
+        
+        viewControllers.forEach { viewController in
+            if let catEmotionVC = viewController as? CatEmotionViewController {
+                catEmotionVC.dishType = recipeTypeTitle
+            }
+        }
         
         let backItem = UIBarButtonItem()
         backItem.title = "Назад"

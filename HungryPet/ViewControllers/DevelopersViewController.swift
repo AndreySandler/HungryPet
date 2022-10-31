@@ -9,6 +9,7 @@ import UIKit
 
 class DevelopersViewController: UIViewController {
     
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer()
