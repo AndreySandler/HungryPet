@@ -11,7 +11,7 @@ struct Food {
     let products: [String]
     let recipe: String
     
-    static func getRecipe() -> [Food] {
+    static func getFood() -> [Food] {
         var wholeFood: [Food] = []
         
         let sandwich = Food(

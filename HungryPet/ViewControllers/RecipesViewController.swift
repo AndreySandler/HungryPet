@@ -10,7 +10,7 @@ import UIKit
 class RecipesViewController: UITableViewController {
     
     // MARK: - Public Properties
-    let food = Food.getRecipe()
+    let food = Food.getFood()
     
     var products: [Product] = []
     var recipeTypes: [String] = []
