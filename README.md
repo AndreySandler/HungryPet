@@ -14,12 +14,12 @@
 
 /*English*\
 
-The first project of the Unstoppable Underdog team.
-
-This application was created for those who are tired of thinking about what to cook for dinner. Take a look in the fridge, mark the available ingredients and find something that you can cook right now! In the meantime, dinner is being prepared, you can take care of your pet: it also wants to eat and sleep, just like the owner.
+The Unstoppable Underdog's first project. 
  
-- 100 recipes: you will definitely find something to your liking;
-- simple ingredients: no need to go to the store, you already have everything you need;
-- funny pet: just send him for a walk.
-
-Target audience: adults who do not have the time, energy, imagination to think what to cook.
+This application was created for busy people who are tired of thinking about what to cook for dinner. Check your food in the fridge, mark the current ingredients and find something that you can cook right now! While the dinner is being prepared, you may take care of your app pet: it also wants to eat and sleep, just like the owner. 
+ 
+- 100 recipes: you will definitely find something that you like; 
+- simple ingredients: you don't have to visit a grocery store, you already have everything you need; 
+- nice pet: just send him for a walk. 
+ 
+Target audience: adults who have no time, energy, imagination to think what to cook for dinner everyday.
