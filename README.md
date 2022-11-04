@@ -1,5 +1,5 @@
 # HungryPet
-/*Russian*\
+>Russian
 
 Первый проект команды Unstoppable Underdog.
 
@@ -12,7 +12,7 @@
 Целевая аудитория: взрослые люди, у которых нет времени, сил, фантазии думать что приготовить.
 
 
-/*English*\
+>English
 
 The Unstoppable Underdog's first project. 
  
